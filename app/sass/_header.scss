@@ -1,0 +1,56 @@
+.header{
+	width: 100%;
+	background:#fff;
+	height: 104px;
+	display: flex;
+	align-items:center;
+	.container{
+		overflow: hidden;
+		display: flex;
+	align-items:center;
+	}
+	.logo{
+
+		width: 158px;
+		height: 66px;
+		margin-right: auto;
+		a{
+			display: block;
+			height: 100%;
+			font-size: 0;
+			text-indent: -9999px;
+			overflow: hidden;
+			background:url("../images/logo.png") no-repeat;
+		}
+	}
+	.etc{
+		ul{
+			float: left;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			li{
+				float: left;
+				font:20px/24px 'Roboto', sans-serif;
+				color: #292929;
+				font-weight: 300;
+				margin-right: 100px;
+				&:last-child{
+					margin-right: 0;
+				}
+				a{
+					color: #292929;
+				}
+			}
+		}
+		span{
+			color: #292929;
+			font-size: 22px;
+			line-height: 24px;
+			margin-left: 64px;
+			a{
+				color: #292929;
+			}
+		}
+	}
+}
