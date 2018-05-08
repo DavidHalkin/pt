@@ -200,3 +200,66 @@ footer{
 		}
 	}
 }
+.data_work{
+	width: 100%;
+	overflow: hidden;
+	padding-top: 15px;
+	position: relative;
+	z-index: 10;
+	.data_l{
+		width: 128px;
+		padding: 0 15px 0 0;
+		float: left;
+		overflow: hidden;
+		height: 48px;
+		border-right: 1px solid #dfdbdf;
+	}
+	.data_r{ 
+		padding-left: 15px;
+		float: left;
+		ul{
+			li{
+				color: #a9a3a2;
+				&:after{
+					background: #000;
+				}
+			}
+		}
+		span{color: #424242 !important;}
+	}
+	span{
+		display: block;
+		font-size: 11px;
+		line-height: 13px;
+		color: #000000;
+		text-align: left;
+		padding-top: 6px;
+	}
+	ul{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: flex;
+		text-transform: uppercase;
+		font-size: 9px;
+		line-height: 12px;
+		color: #292929;
+		justify-content:space-between;
+		li{
+			position: relative;
+			padding-top: 18px;
+			&:after{
+				content: '';
+				width: 5px;
+				height: 5px;
+				border-radius: 50%;
+				display: block;
+				position: absolute;
+				top: 3px;
+				left: 50%;
+				transform:translateX(-50%);
+				background: #c0bcbb;
+			}
+		}
+	}
+}

@@ -1031,14 +1031,14 @@ article ,aside ,audio,canvas,datalist,details,figcaption,figure,footer,header,hg
 	top: 15px;
 }
 .custom_fancybox{
-	max-width: 970px;
+	max-width: 800px;
 	width: 100%;
 	padding: 0;
 	font-family: 'Montserrat', sans-serif !important;
 	.fancybox_footer{
 		background: #0a0a0a;
 		color: #fff;
-		padding: 36px 90px;
+		padding: 36px 30px;
 		text-align: right;
 		overflow: hidden;
 		width: 100%;
@@ -1056,7 +1056,7 @@ article ,aside ,audio,canvas,datalist,details,figcaption,figure,footer,header,hg
 		}
 	}
 	.fancybox_content{
-		padding: 90px 20px 75px 90px;
+		padding: 90px 20px 75px 30px;
 		h2{
 			text-transform: uppercase;
 			font-size: 40px;

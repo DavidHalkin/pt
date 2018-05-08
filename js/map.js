@@ -29,6 +29,6 @@ function init() {
         position: new google.maps.LatLng(40.6700, -73.9400),
         map: map,
         title: 'Oo',
-        icon: '../images/pin.svg'
+        icon: '../images/icon1.svg'
     });
 }
