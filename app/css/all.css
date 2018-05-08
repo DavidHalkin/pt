@@ -73,6 +73,26 @@ footer ul li a:hover { opacity: .7; }
   .footer_top .container .col:nth-child(3) h3 { padding-bottom: 0; }
   .footer_top .container .col:nth-child(3) b { padding: 15px 0 0 0; } }
 
+.data_work { width: 100%; overflow: hidden; padding-top: 15px; position: relative; z-index: 10; }
+
+.data_work .data_l { width: 128px; padding: 0 15px 0 0; float: left; overflow: hidden; height: 48px; border-right: 1px solid #dfdbdf; }
+
+.data_work .data_r { padding-left: 15px; float: left; }
+
+.data_work .data_r ul li { color: #a9a3a2; }
+
+.data_work .data_r ul li:after { background: #000; }
+
+.data_work .data_r span { color: #424242 !important; }
+
+.data_work span { display: block; font-size: 11px; line-height: 13px; color: #000000; text-align: left; padding-top: 6px; }
+
+.data_work ul { margin: 0; padding: 0; list-style: none; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; text-transform: uppercase; font-size: 9px; line-height: 12px; color: #292929; -webkit-box-pack: justify; -webkit-justify-content: space-between; -ms-flex-pack: justify; justify-content: space-between; }
+
+.data_work ul li { position: relative; padding-top: 18px; }
+
+.data_work ul li:after { content: ''; width: 5px; height: 5px; -webkit-border-radius: 50%; border-radius: 50%; display: block; position: absolute; top: 3px; left: 50%; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); background: #c0bcbb; }
+
 .header { width: 100%; background: #fff; height: 104px; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
 
 .header .container { overflow: hidden; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-box-align: center; -webkit-align-items: center; -ms-flex-align: center; align-items: center; }
@@ -438,15 +458,15 @@ article, aside, audio, canvas, datalist, details, figcaption, figure, footer, he
 
 .fancybox-close-small { color: #000; opacity: 1; width: 50px; height: 50px; padding: 0; right: 15px; top: 15px; }
 
-.custom_fancybox { max-width: 970px; width: 100%; padding: 0; font-family: 'Montserrat', sans-serif !important; }
+.custom_fancybox { max-width: 800px; width: 100%; padding: 0; font-family: 'Montserrat', sans-serif !important; }
 
-.custom_fancybox .fancybox_footer { background: #0a0a0a; color: #fff; padding: 36px 90px; text-align: right; overflow: hidden; width: 100%; }
+.custom_fancybox .fancybox_footer { background: #0a0a0a; color: #fff; padding: 36px 30px; text-align: right; overflow: hidden; width: 100%; }
 
 .custom_fancybox .fancybox_footer p { margin: 4px 0 0 0; font-size: 20px; line-height: 22px; float: left; }
 
 .custom_fancybox .fancybox_footer a { color: #fff; font-size: 33px; line-height: 34px; float: right; }
 
-.custom_fancybox .fancybox_content { padding: 90px 20px 75px 90px; }
+.custom_fancybox .fancybox_content { padding: 90px 20px 75px 30px; }
 
 .custom_fancybox .fancybox_content h2 { text-transform: uppercase; font-size: 40px; line-height: 43px; color: #1f1f1f; font-weight: normal; margin: 0; }
 
