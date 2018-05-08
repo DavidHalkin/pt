@@ -1,6 +1,5 @@
 footer{
 	display: block;
-
 	.footer_bottom{
 		background: #191919;
 		color: #fff;
@@ -8,6 +7,17 @@ footer{
 			display: flex;
 			align-items:center;
 			height: 87px;
+			padding-top: 30px;
+			@media screen and (max-width: 1000px) {
+				padding-top: 0;
+				flex-wrap:wrap;
+				height: 80px;
+			}
+			@media screen and (max-width: 800px) {
+				display: table;
+				width: auto;
+				text-align: center;
+			}
 		}
 	}
 	span{
@@ -15,6 +25,12 @@ footer{
 		font-size: 11px;
 		line-height: 14px;
 		margin-right: auto;
+		order:-1;
+		@media screen and (max-width: 800px) {
+			
+			margin-right: 0;
+			display: block;
+		}
 	}
 	ul{
 		margin: 0;
@@ -34,17 +50,35 @@ footer{
 				}
 			}
 		}
+		@media screen and (max-width: 800px) {
+			display: flex ;
+			justify-content:space-between;
+			width: 100%;
+			li{
+				margin: 10px 0;
+			}
+		}
 	}
+
 }
 .hld{
 	max-width: 320px;
 	margin: 0 auto;
 }
+.hld_footer{
+	position: relative;
+}
 .footer_top{
+	position: absolute;
+	bottom: -30px;
+	left: 0;
+	width: 100%;
 	.container{
 		display: flex;
 		padding-top: 30px;
 		padding-bottom: 15px;
+		background:#fff;
+		max-width: 1140px;
 		.col{
 			flex: 0 0 30%;
 			max-width: 30%;
@@ -69,7 +103,7 @@ footer{
 				border-right: 1px solid #efebe7;
 				img{
 					display: block;
-					margin-top: 15px;
+					padding-top: 15px;
 				}
 			}
 			&:last-child{
@@ -100,6 +134,68 @@ footer{
 				line-height: 22px;
 				color: #605c56;
 				text-align: left;
+			}
+		}
+	}
+	@media screen and (max-width: 1000px) {
+		position: static;
+	}
+	@media screen and (max-width: 800px) {
+		.container{
+			flex-wrap:wrap;
+			padding-top: 15px;
+			overflow: hidden;
+			.col{
+				flex: 0 0 100% !important;
+				max-width: 100% !important;
+				padding-left: 0;padding-right: 0;
+				.hld_img{
+					background: #f2f2f2;
+					padding-bottom: 17px;
+					margin-top: 10px;
+					position: relative;
+					img{
+						position: relative;
+						z-index: 2;
+					}
+					&:after{
+						content: '';
+						width: 9999px;
+						position: absolute;
+						left: -100%;
+						top: 0;
+						height: 100%;
+						background:inherit;
+						z-index: 1;
+					}
+				}
+				h3{
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 18px;
+				}
+				p{
+					font-size: 14px;
+					line-height: 22px;
+				}
+				&:nth-child(1){
+					h3{
+						padding-bottom: 0;
+					}
+				}
+				&:nth-child(2){
+					border: 0;
+					padding-top: 20px;
+					border-top: 1px solid #e8e8e8;
+				}
+				&:nth-child(3){
+					h3{
+						padding-bottom: 0;
+					}
+					b{
+						padding: 15px 0 0 0;
+					}
+				}
 			}
 		}
 	}
