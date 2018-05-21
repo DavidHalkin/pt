@@ -168,6 +168,11 @@ article, aside, audio, canvas, datalist, details, figcaption, figure, footer, he
 
 .article ul li:first-child:before { content: none; }
 
+@media screen and (max-width: 550px) { .article ul { margin: 0 -20px; }
+  .article ul li { padding: 5px 20px; font-size: 16px !important; }
+  .article ul li:first-child { padding-left: 0; }
+  .article ul li:last-child { padding-right: 0; } }
+
 .article span { font-size: 43px; line-height: 44px; }
 
 .article span .fa { font-size: 30px; }
