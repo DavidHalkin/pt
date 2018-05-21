@@ -205,6 +205,8 @@ article, aside, audio, canvas, datalist, details, figcaption, figure, footer, he
 
 .calc_block .txt { border: 0; height: 60px; color: rgba(41, 41, 41, 0.7); font-size: 20px; padding: 5px 18px; outline: none; width: 106px; }
 
+.calc_block .txt.txt_long { width: 100%; }
+
 .calc_block button { border: 2px solid #fff; width: 60px; height: 60px; background: none; color: #fff; cursor: pointer; }
 
 .calc_block button span { display: none; }
