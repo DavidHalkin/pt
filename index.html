@@ -16,7 +16,7 @@
 		<div class="wrapper">
 			<div class="header">
 				<div class="container">
-					<strong class="logo"><a href="javascript:;" data-fancybox="modal" data-src="#modal">logo</a></strong>
+					<strong class="logo"><a href="#">logo</a></strong>
 					<div class="etc">
 						<ul>
 							<li><a href="#">О нас</a></li>
@@ -40,7 +40,7 @@
 			</div>
 			<div class="calc_block">
 				<form action="#">
-					<h3 class="text_center">Просчет стоимости вашего авто:</h3>
+					<h3 class="text_center">Расчет таможенных платежей:</h3>
 					<div class="row">
 						<div class="col_holder_left">
 							<div class="col col-1">
@@ -58,11 +58,7 @@
 								</select>
 							</div>
 							<div class="col col-3">
-								<select class="present" data-jcf='{"wrapNative": false, "wrapNativeOnMobile": false}'>
-									<option  value="v4">Обьем (Куб.см.)</option>
-									<option  value="v5">Обьем (Куб.см.) 3</option>
-									<option  value="v6">Bank Card</option>
-								</select>
+								<input type="text" class="txt txt_long" value="" placeholder="Обьем (Куб.см.)">
 							</div>
 						</div>
 						<div class="col_holder_right">
@@ -70,7 +66,7 @@
 								<input type="text" class="txt" value="" placeholder="Цена">
 							</div>
 							<div class="col col-5">
-								<button><i class="fa fa-search" aria-hidden="true"></i> <span>Просчёт</span></button>
+								<button data-fancybox="modal" data-src="#modal"><i class="fa fa-search" aria-hidden="true"></i> <span>Просчёт</span></button>
 							</div>
 						</div>
 					</div>
@@ -83,7 +79,7 @@
 						<div class="col">
 							<strong>1</strong>
 							<h3>Выбор авто</h3>
-							<p>Мы поможем выбрать и купить авто <br> <span>(проконсультируем по техническому состоянию)</span></p>
+							<p>Мы поможем выбрать и купить авто <br> <span>(проконсультируем и поможем выбрать подходящий автомобиль)</span></p>
 						</div>
 						<div class="col">
 							<strong>2</strong>
@@ -103,33 +99,115 @@
 					<h2 class="text_center">На этой неделе мы растаможили:</h2>
 					<div class="owl-carousel owl-theme yet_js">
 						<div class="item">
-							<a href="#"><img src="images/img.jpg" alt=""></a>
+							<div class="item_prev">
+								<a href="images/img.jpg" data-fancybox="images">
+									<img src="images/img.jpg" alt="">
+									<span class="zoom"></span>
+								</a>
+								<!-- photo in lightbox start-->
+								<div class="hidden_photo">
+									<a href="https://source.unsplash.com/i-FqQIkJMqg/1536x2304" data-fancybox="images">
+										<img src="https://source.unsplash.com/i-FqQIkJMqg/1536x2304" alt="">
+									</a>
+									<a href="https://source.unsplash.com/z55CR_d0ayg/1279x853" data-fancybox="images">
+										<img src="https://source.unsplash.com/z55CR_d0ayg/1279x853" alt="">
+									</a>
+								</div>
+								<!-- photo in lightbox END-->
+							</div>
 							<div class="item_info">
-								<h3 class="text_center">Land Rover 2015</h3>
 								<ul>
-									<li><span>Цена в салоне:</span> <em>  $ 19 000</em></li>
-									<li><span>Цена “под ключ”:</span> <em>$ 15 000</em></li>
+									<li><span>Год:</span> <em>2013</em></li>
+									<li><span>Производитель:</span> <em>FIAT</em></li>
+									<li><span>Модель:</span> <em>500e Electric</em></li>
+									<li><span>Кузов:</span> <em>Hatchback 2D</em></li>
+									<li><span>Двигатель:</span> <em>50 state / ZEV Electric 83kw </em></li>
 								</ul>
+								<span class="item_cost">$ 9500</span>
 							</div>
 						</div>
 						<div class="item">
-							<a href="#"><img src="images/img.jpg" alt=""></a>
+							<div class="item_prev">
+								<a href="images/img.jpg" data-fancybox="images2">
+									<img src="images/img.jpg" alt="">
+									<span class="zoom"></span>
+								</a>
+								<!-- photo in lightbox start-->
+								<div class="hidden_photo">
+									<a href="https://source.unsplash.com/i-FqQIkJMqg/1536x2304" data-fancybox="images2">
+										<img src="https://source.unsplash.com/i-FqQIkJMqg/1536x2304" alt="">
+									</a>
+									<a href="https://source.unsplash.com/z55CR_d0ayg/1279x853" data-fancybox="images2">
+										<img src="https://source.unsplash.com/z55CR_d0ayg/1279x853" alt="">
+									</a>
+								</div>
+								<!-- photo in lightbox END-->
+							</div>
 							<div class="item_info">
-								<h3 class="text_center">Land Rover 2015</h3>
 								<ul>
-									<li><span>Цена в салоне:</span> <em>  $ 19 000</em></li>
-									<li><span>Цена “под ключ”:</span> <em>$ 15 000</em></li>
+									<li><span>Год:</span> <em>2013</em></li>
+									<li><span>Производитель:</span> <em>FIAT</em></li>
+									<li><span>Модель:</span> <em>500e Electric</em></li>
+									<li><span>Кузов:</span> <em>Hatchback 2D</em></li>
+									<li><span>Двигатель:</span> <em>50 state / ZEV Electric 83kw </em></li>
 								</ul>
+								<span class="item_cost">$ 9500</span>
 							</div>
 						</div>
 						<div class="item">
-							<a href="#"><img src="images/img.jpg" alt=""></a>
+							<div class="item_prev">
+								<a href="images/img.jpg" data-fancybox="images3">
+									<img src="images/img.jpg" alt="">
+									<span class="zoom"></span>
+								</a>
+								<!-- photo in lightbox start-->
+								<div class="hidden_photo">
+									<a href="https://source.unsplash.com/Q1Zyjio6pIM/1279x870" data-fancybox="images3">
+										<img src="https://source.unsplash.com/Q1Zyjio6pIM/1279x870" alt="">
+									</a>
+									<a href="https://source.unsplash.com/z55CR_d0ayg/1279x853" data-fancybox="images3">
+										<img src="https://source.unsplash.com/z55CR_d0ayg/1279x853" alt="">
+									</a>
+								</div>
+								<!-- photo in lightbox END-->
+							</div>
 							<div class="item_info">
-								<h3 class="text_center">Land Rover 2015</h3>
 								<ul>
-									<li><span>Цена в салоне:</span> <em>  $ 19 000</em></li>
-									<li><span>Цена “под ключ”:</span> <em>$ 15 000</em></li>
+									<li><span>Год:</span> <em>2013</em></li>
+									<li><span>Производитель:</span> <em>FIAT</em></li>
+									<li><span>Модель:</span> <em>500e Electric</em></li>
+									<li><span>Кузов:</span> <em>Hatchback 2D</em></li>
+									<li><span>Двигатель:</span> <em>50 state / ZEV Electric 83kw </em></li>
 								</ul>
+								<span class="item_cost">$ 9500</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item_prev">
+								<a href="images/img.jpg" data-fancybox="images4">
+									<img src="images/img.jpg" alt="">
+									<span class="zoom"></span>
+								</a>
+								<!-- photo in lightbox start-->
+								<div class="hidden_photo">
+									<a href="https://source.unsplash.com/i-FqQIkJMqg/1536x2304" data-fancybox="images4">
+										<img src="https://source.unsplash.com/i-FqQIkJMqg/1536x2304" alt="">
+									</a>
+									<a href="https://source.unsplash.com/z55CR_d0ayg/1279x853" data-fancybox="images4">
+										<img src="https://source.unsplash.com/z55CR_d0ayg/1279x853" alt="">
+									</a>
+								</div>
+								<!-- photo in lightbox END-->
+							</div>
+							<div class="item_info">
+								<ul>
+									<li><span>Год:</span> <em>2013</em></li>
+									<li><span>Производитель:</span> <em>FIAT</em></li>
+									<li><span>Модель:</span> <em>500e Electric</em></li>
+									<li><span>Кузов:</span> <em>Hatchback 2D</em></li>
+									<li><span>Двигатель:</span> <em>50 state / ZEV Electric 83kw </em></li>
+								</ul>
+								<span class="item_cost">$ 9500</span>
 							</div>
 						</div>
 					</div>
@@ -202,7 +280,7 @@
 						<div class="col">
 							<h3>Адрес</h3>
 							<div class="hld">
-								<p>Одесса, Хаджибейская дорого 4/1,  <br> ТГТ ООО"ЕВРОТЕРМИНАЛ" , АВТОХАБ ОДЕССА</p>
+								<p>Одесса, Хаджибейская дорого 4/1,  <br> ГТК ООО"ЕВРОТЕРМИНАЛ" , АВТОХАБ ОДЕССА</p>
 								<div class="hld_img">
 									<div class="data_work">
 										<div class="data_l">

@@ -89,6 +89,19 @@ article ,aside ,audio,canvas,datalist,details,figcaption,figure,footer,header,hg
 				&:before{content: none;}
 			}
 		}
+		@media screen and (max-width: 550px) {
+			margin: 0 -20px;
+			li{
+				padding: 5px 20px;
+				font-size: 16px !important;
+				&:first-child{
+					padding-left: 0;
+				}
+				&:last-child{
+					padding-right: 0;
+				}
+			}
+		}
 	}
 	span{
 		font-size: 43px;
@@ -178,6 +191,9 @@ article ,aside ,audio,canvas,datalist,details,figcaption,figure,footer,header,hg
 		padding: 5px 18px;
 		outline: none;
 		width: 106px;
+		&.txt_long{
+			width: 100%;
+		}
 	}
 	button{
 		span{display: none;}
@@ -569,7 +585,7 @@ article ,aside ,audio,canvas,datalist,details,figcaption,figure,footer,header,hg
 		background: #fff;
 		border-bottom-right-radius: 3px;
 		border-bottom-left-radius: 3px;
-		padding-bottom: 14px;
+		// padding-bottom: 14px;
 		img{
 			border-top-right-radius: 3px;
 			border-top-left-radius: 3px;
@@ -586,31 +602,40 @@ article ,aside ,audio,canvas,datalist,details,figcaption,figure,footer,header,hg
 			padding-bottom: 25px;
 		}
 		.item_info{
-			padding: 30px;
+			padding: 30px 20px 0;
+			.item_cost{
+				background: #191919;
+				color: #fff;
+				text-align: center;
+				display: block;
+				margin: 0 -20px;
+				border-bottom-right-radius: 3px;
+				border-bottom-left-radius: 3px;
+				font-size: 18px;
+				line-height: 20px;
+				padding:10px 0;
+			}
 		}
 		ul{
 			margin: 0;
-			padding: 0;
+			padding: 4px 0 20px 0;
 			list-style: none;
 			display: table;
 			width: 100%;
 			li{
 				display: table-row;
+				font-size: 14px;
+				line-height: 16px;
+				span{
+					padding-right: 15px;
+					font-size: 14px;
+					line-height: 16px;
+					color: rgba(#292929,.68);
+				}
 				span,em{
 					display: table-cell;
 					font-style: normal;
-					font-size: 16px;
-					line-height: 24px;
 					padding-bottom: 13px;
-				}
-				&:last-of-type{
-					span,em{
-						font-weight: 700;
-						padding-bottom: 0;
-					}
-					em{
-						font-size: 22px;
-					}
 				}
 			}
 		}
@@ -1156,4 +1181,19 @@ article ,aside ,audio,canvas,datalist,details,figcaption,figure,footer,header,hg
 		}
 	}
 	
+}
+.item_prev{
+	position: relative;
+	.zoom{
+		width: 36px;
+		height: 36px;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		background: url(../images/zoom.svg);
+		background-size: cover;
+	}
+}
+.hidden_photo{
+	display: none;
 }
