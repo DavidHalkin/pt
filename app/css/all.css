@@ -99,7 +99,7 @@ footer ul li a:hover { opacity: .7; }
 
 .header .logo { width: 158px; height: 66px; margin-right: auto; }
 
-.header .logo a { display: block; height: 100%; font-size: 0; text-indent: -9999px; overflow: hidden; background: url("../images/logo.png") no-repeat; }
+.header .logo a { display: block; height: 100%; font-size: 0; text-indent: -9999px; overflow: hidden; background: url("../images/logo.svg") no-repeat; -webkit-background-size: cover; background-size: cover; }
 
 @media screen and (max-width: 700px) { .header .logo { margin: 0 auto; width: 85px; height: 37px; }
   .header .logo a { -webkit-background-size: cover !important; background-size: cover !important; } }
@@ -318,23 +318,23 @@ article, aside, audio, canvas, datalist, details, figcaption, figure, footer, he
 
 .yet_block h2 { margin: 0; color: #010101; font-size: 40px; line-height: 42px; font-weight: normal; padding-bottom: 50px; }
 
-.yet_block .item { background: #fff; -webkit-border-bottom-right-radius: 3px; border-bottom-right-radius: 3px; -webkit-border-bottom-left-radius: 3px; border-bottom-left-radius: 3px; padding-bottom: 14px; }
+.yet_block .item { background: #fff; -webkit-border-bottom-right-radius: 3px; border-bottom-right-radius: 3px; -webkit-border-bottom-left-radius: 3px; border-bottom-left-radius: 3px; }
 
 .yet_block .item img { -webkit-border-top-right-radius: 3px; border-top-right-radius: 3px; -webkit-border-top-left-radius: 3px; border-top-left-radius: 3px; display: block; max-width: 100%; height: auto; }
 
 .yet_block .item h3 { margin: 0; font-weight: normal; font-size: 30px; line-height: 33px; color: #292929; padding-bottom: 25px; }
 
-.yet_block .item .item_info { padding: 30px; }
+.yet_block .item .item_info { padding: 30px 20px 0; }
 
-.yet_block .item ul { margin: 0; padding: 0; list-style: none; display: table; width: 100%; }
+.yet_block .item .item_info .item_cost { background: #191919; color: #fff; text-align: center; display: block; margin: 0 -20px; -webkit-border-bottom-right-radius: 3px; border-bottom-right-radius: 3px; -webkit-border-bottom-left-radius: 3px; border-bottom-left-radius: 3px; font-size: 18px; line-height: 20px; padding: 10px 0; }
 
-.yet_block .item ul li { display: table-row; }
+.yet_block .item ul { margin: 0; padding: 4px 0 20px 0; list-style: none; display: table; width: 100%; }
 
-.yet_block .item ul li span, .yet_block .item ul li em { display: table-cell; font-style: normal; font-size: 16px; line-height: 24px; padding-bottom: 13px; }
+.yet_block .item ul li { display: table-row; font-size: 14px; line-height: 16px; }
 
-.yet_block .item ul li:last-of-type span, .yet_block .item ul li:last-of-type em { font-weight: 700; padding-bottom: 0; }
+.yet_block .item ul li span { padding-right: 15px; font-size: 14px; line-height: 16px; color: rgba(41, 41, 41, 0.68); }
 
-.yet_block .item ul li:last-of-type em { font-size: 22px; }
+.yet_block .item ul li span, .yet_block .item ul li em { display: table-cell; font-style: normal; padding-bottom: 13px; }
 
 .yet_block .yet_js { position: relative; }
 
@@ -510,5 +510,11 @@ article, aside, audio, canvas, datalist, details, figcaption, figure, footer, he
 
 @media screen and (max-width: 900px) and (max-width: 450px) { .custom_fancybox .fancybox_content table { text-align: center; }
   .custom_fancybox .fancybox_content table tr, .custom_fancybox .fancybox_content table td { width: 100% !important; display: block; font-size: 20px; line-height: 22px; } }
+
+.item_prev { position: relative; }
+
+.item_prev .zoom { width: 36px; height: 36px; position: absolute; bottom: 0; right: 0; background: url(../images/zoom.svg); -webkit-background-size: cover; background-size: cover; }
+
+.hidden_photo { display: none; }
 
 /*# sourceMappingURL=all.css.map */
